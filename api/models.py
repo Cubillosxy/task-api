@@ -10,3 +10,6 @@ class Task(models.Model):
 
     def __unicode__(self):
         return '{} - {}'.format(self.description, self.user.username if self.user else '')
+
+    class Meta:
+        ordering = ['-id']
