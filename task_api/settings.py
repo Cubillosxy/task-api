@@ -135,6 +135,6 @@ STATIC_URL = '/static/'
 
 
 try:
-   from .local_settings import *
+   from task_api.local_settings import *
 except ImportError as e:
     raise e
